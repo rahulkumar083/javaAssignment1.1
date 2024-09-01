@@ -1,0 +1,238 @@
+Ques. 1. When was java develope and who is the inventor of java? Why we use java for programming?
+Ans Java developed in 1990 by Canadian computer scientist James Gosling.It is use for backend in software and Application also.
+
+Ques. 2. What are the features of java.
+Ans. Features of java
+1.Simple
+2.Object-Oriented
+3.Portable
+4.Platform independent
+5.Secured
+6.Robust
+7.Architecture neutral
+8.Interpreted
+9.High Performance
+10.Multithreaded
+11.Distributed
+12.Dynamic
+Ques. 3. what is JDK, JRE, JVM?
+Ans JDK,It is Java Development Kit.it is use for developing Java applications and Applets.
+It is convert to source code to bytecode.
+
+JRE,It is java runtime environment is software package that provides the runtime environment for java application to run.it is includes virtual machine,jre java load to bytecode into memory.
+
+JVM, java virtual machine is a crucial component of the java ecosystem.It  is software programe that runs bytecode on the computer.it's the run time environment for java applications.
+Ques. 4. what is the structure of java program. write a program to print hello world.
+Ans. 1-package
+     2.class
+     3.import
+     4.main function
+     
+   Program-
+   class first demo1{
+   public static void main(String[] args){
+    System.out.println("hello word");
+
+                          }
+                  }
+       output-hello word
+
+
+Ques. 5. Define Variables in java. Explain different scope of variable.
+Ans.  Variable is container that we store the value of variable
+     there 3 type of variable in java
+
+    local variable(declare in a and in a function)
+    static variable(in declare in class with static key word and outside the function)
+    non-static variable(it is declare in class and out side the function)
+
+
+Ques. 6. Define data types in java.
+ ANS. There are 2 type data type in java 
+     1.Premative
+     2.Non-Premative
+
+    Premative(int,long,byte,short,float,boolean double)
+    Non-Premative(Array,String,class)
+
+Ques. 7. What is type casting in java?
+Ans. Type casting in java ,it is a process that is convert to data type into another data type.according to your requirment that is type casting.
+
+Example   double-> floa->long->int->short-> byte
+
+Ques. 8. Write a program to add two number by taking input from user.
+ans-
+
+Import Java.util.Scanner;
+Public class add_twoNo.{
+Public Static void main(String[ Args]){
+int a;
+int b;
+int Sum;
+Scanner sc=new Scanner(System.in);
+System.out.println(“Enter the first number”);
+a=sc.nextInt();
+System.out.println(“Enter the Second number”);
+b=sc.nextInt();
+Sum=a+b;
+System.out.println(Sum);
+}
+}
+
+Ques. 9. Define operator and its type?
+
+Ans. 9. An Operator is a special symbol or keyword that performs operations on one or more operands.
+ Arithmetic Operators
+Addition 
+ 2 + 3 = 5
+Subtraction 
+ 6 - 1 = 5
+Multiplication
+2 * 6  = 12
+Division 
+ 8 / 2 = 4
+Modulus 
+ 10 % 3 = 1
+
+Relational Operators
+
+Equal to 
+ 2 == 2 : true.
+Not equal 
+ 5 != 3 :false
+Greater than 
+5> 2 :true
+Less than 
+ 1 < 5: true
+Greater than or equal 
+1 >= 1 : true
+Less than or equal
+ 2 <= 3 : true
+Logical Operators
+
+AND 
+(1 && 0) : false
+OR
+(1 || 0) : true
+NOT  
+1!=0: false
+
+Assignment Operators
+
+Assignment 
+ x = 10.
+Addition assignment 
+ x += 4.
+Subtraction assignment 
+ x -= 4.
+Multiplication assignment 
+ x *= 4.
+Division assignment 
+x /= 4.
+Modulus assignment 
+x %= 3
+
+
+Bitwise Operators
+
+AND (&): 5 & 3 results in 1.
+OR (|): 5 | 3 results in 7.
+XOR (^): 5 ^ 3 results in 6.
+NOT (~): ~5 results in -6.
+Left shift (<<): 2 << 1 results in 4.
+Right shift (>>): 4 >> 1 results in 2.
+
+Conditional (Ternary) Operator
+Ternary (?:): (a > b) ? a : b.
+Unary Operators
+Unary plus (+): +5 = 5.
+Unary minus (-): -5 = -5.
+Increment (++): x++.
+Decrement (--): x--.
+Logical NOT (!): !true = false.
+
+Ques. 10. Write a program individually to perform operators operation.
+Ans.
+
+import java.util.Scanner;
+
+public class OperatorOperations {
+
+    public static void performOperations(double a, double b) {
+        // Addition
+        double addition = a + b;
+        System.out.println("Addition: " + a + " + " + b + " = " + addition);
+
+        // Subtraction
+        double subtraction = a - b;
+        System.out.println("Subtraction: " + a + " - " + b + " = " + subtraction);
+
+        // Multiplication
+        double multiplication = a * b;
+        System.out.println("Multiplication: " + a + " * " + b + " = " + multiplication);
+
+        // Division
+        if (b != 0) {
+            double division = a / b;
+            System.out.println("Division: " + a + " / " + b + " = " + division);
+        } else {
+            System.out.println("Division: Cannot divide by zero.");
+        }
+
+        // Modulus
+        if (b != 0) {
+            double modulus = a % b;
+            System.out.println("Modulus: " + a + " % " + b + " = " + modulus);
+        } else {
+            System.out.println("Modulus: Cannot compute modulus by zero.");
+        }
+
+        // Exponentiation
+        double exponentiation = Math.pow(a, b);
+        System.out.println("Exponentiation: " + a + " ^ " + b + " = " + exponentiation);
+
+        // Floor Division (using integer division)
+        if (b != 0) {
+            int floorDivision = (int) a / (int) b;
+            System.out.println("Floor Division: " + (int) a + " // " + (int) b + " = " + floorDivision);
+        } else {
+            System.out.println("Floor Division: Cannot divide by zero.");
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input numbers
+        System.out.print("Enter the first number: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Enter the second number: ");
+        double num2 = scanner.nextDouble();
+
+        // Perform operations
+        performOperations(num1, num2);
+
+        // Close the scanner
+        scanner.close();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
